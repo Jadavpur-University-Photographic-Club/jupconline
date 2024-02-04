@@ -1,16 +1,707 @@
-.montage{
+.montage-poster{
     margin-top: 10rem;
     text-align: center;
     align-items: center;
 }
 
-.montage img{
-    width: 30%;
+.montage-poster img{
+    width: 25%;
     margin-top: 2%;
 }
 
 @media(max-width:1024px) {
-    .montage img{
+    .montage-poster img{
         width: 80%;
     }
+}
+
+/* Timer section css */
+.countdown-section {
+    width: 100%;
+    padding: 2rem 3rem;
+    background-color: #fff;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .event-date {
+    width: 100%;
+  }
+  
+  .counter {
+    display: flex;
+    width: 100%;
+    
+  }
+  
+  .day,
+  .hour,
+  .minute,
+  .second {
+    height: 6rem;
+    width: 6rem;
+    padding: 1.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .countdown-section {
+      padding: 30px 0;
+    }
+    .row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .col {
+      flex: 1;
+    }
+    .day,
+    .hour,
+    .minute,
+    .second {
+      height: 5rem;
+      width: 5rem;
+      padding: 1rem;
+      margin: 0.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .day,
+    .hour,
+    .minute,
+    .second {
+      height: 4rem;
+      width: 4rem;
+      padding: 0.5rem;
+      margin: 0.25rem;
+      font-size: 12px;
+    }
+  }
+  
+  
+  /* Additional responsiveness for 360x740px */
+  @media (max-width: 360px) {
+    
+    
+    .day,
+    .hour,
+    .minute,
+    .second {
+      padding: 0.75rem;
+      margin: 0.25rem;
+    }
+  }
+
+.about-montage{
+  width: 100%;
+  background-color: #333333;
+}
+
+.about-montage .about-montage-details{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3vh;
+  color: #fff;
+}
+.about-montage .about-montage-details h1{
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: #fff;
+}
+.about-montage .about-montage-details p{
+  font-size: 1.8rem;
+}
+
+/* submission section css */
+
+.submission-title{
+    color: #333;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+
+  }
+  #submissions{
+  
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+    
+
+    
+    #submission .box h2{
+      font-size: 1.8rem;
+    }
+    
+    #submission{
+      margin: 34px;
+      display: flex;
+      gap: 5rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #submission .box{ 
+      padding: 2rem;
+      padding-bottom: 4rem;
+      margin: 5px;
+      border-radius: 1rem;
+      background: #333;
+      width: 30rem;
+      /* width: 300px; */
+      text-align: center;
+    }
+    #submission .box h2{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: #fff;
+    }
+    #submission .box img{ 
+      height: 15rem;
+      margin: auto;
+      display: block;
+    }
+    
+    #submission .box a{
+      position: relative;
+      top: 1rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+      color:#000000;
+      background-color: #fff;
+      font-size: 1.5rem;
+      font-weight: 600;
+  }
+  
+    
+ 
+  
+
+/* judges section css */
+#judges {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: #333;
+  }
+  #judges .judges-title {
+    font-size: 3.5rem;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .judges-container{
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 50px 50px;
+  }
+  .judges-container .card {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    
+    transition: 0.5s;
+  }
+  .judges-container .card:hover{
+    height: 320px;
+  }
+  .judges-container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  .judges-container .card:hover .imgBx{
+    top: -25px;
+    /* scale: 0.75; */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+  
+  .judges-container .card .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px;
+    
+  }
+  
+  .judges-container .card .content {
+    position: absolute;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    top: 250px;
+    height: 30px;
+    transition: 0.5s;
+  }
+  
+  .judges-container .card:hover .content{
+    height: 220px;
+    top: 225px;
+  }
+  
+  .judges-container .card .content h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+  .judges-container .card .content .socials{
+    color: #000000;
+  }
+  
+  .judges-container .card .content i {
+    padding: 5px;
+    transition: 0.5s;
+  }
+  .judges-container .card .content i:hover {
+    color: #000000;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 850px) {
+    #judges .judges-title {
+        font-weight: 800;
+        font-size: 2.5rem;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+  
+    .judges-container{
+        /* overflow: hidden; */
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* gap: 100px 50px; */
+        padding: 30px 10px;
+    }
+    .judges-container .card {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        width: 250px;
+        height: 235px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+        transition: 0.5s;
+    }
+    .judges-container .card:hover{
+        height: 200px;
+    }
+    .judges-container .card .imgBx{
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: 220px;
+        height: 150px;
+        background: #333;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .judges-container .card:hover .imgBx{
+        top: -25px;
+        /* scale: 0.75; */
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    }
+    
+    .judges-container .card .imgBx img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .judges-container .card .content {
+        position: absolute;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+        overflow: hidden;
+        top: 180px;
+        height: 29px;
+        transition: 0.5s;
+    }
+    
+    .judges-container .card:hover .content{
+        height: 220px;
+        top: 130px;
+    }
+    
+    .judges-container .card .content h2 {
+        font-weight: 600;
+        /* margin-bottom: 10px; */
+        margin-bottom: 0;
+    }
+    
+    .judges-container .card .content i {
+        padding: 0 5px;
+        transition: 0.5s;
+    }
+    .judges-container .card .content i:hover {
+        color: #85FFBD;
+        transform: translateY(-2px);
+    }
+  }
+  
+
+
+  #timeline {
+    background-color: #FDFCFC;
+    
+    text-align: center;
+    padding-bottom: 5rem;
+    padding-bottom: 5rem;
+}
+
+.timeline-title{
+  font-size: 3.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+  
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #333333;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.tlentry {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.tlentry.left {
+  left: 0;
+}
+
+.tlentry.right {
+  left: 50%;
+}
+
+.tlentry::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #333333;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.tlentry.right::after {
+  left: -8px;
+}
+
+.tlentry::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #333333;
+  z-index: 1;
+}
+
+.tlentry.right::before {
+  left: 8px;
+}
+
+.tlentry .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.tlentry.left .date {
+  right: -75px;
+}
+
+.tlentry.right .date {
+  left: -75px;
+}
+
+.tlentry .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #E9C8C4;
+  border: 2px solid #333333;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #333333;
+  z-index: 1;
+}
+
+.tlentry.left .icon {
+  right: 56px;
+}
+
+.tlentry.right .icon {
+  left: 56px;
+}
+
+.tlentry .tlcontent {
+  padding: 30px 90px 30px 30px;
+  background: #E9C8C4; 
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.tlentry.right .tlcontent {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.tlentry .tlcontent h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.tlentry .tlcontent p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .tlentry {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .tlentry.right {
+    left: 0%;
+  }
+
+  .tlentry.left::after, 
+  .tlentry.right::after {
+    left: 82px;
+  }
+
+  .tlentry.left::before,
+  .tlentry.right::before {
+    left: 100px;
+    border-color: transparent #333333 transparent transparent;
+  }
+
+  .tlentry.left .date,
+  .tlentry.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .tlentry.left .icon,
+  .tlentry.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .tlentry.left .tlcontent,
+  .tlentry.right .tlcontent {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+
+.container {
+  padding-top: 20px;
+  margin: 10px auto;
+  padding: 1rem;
+  width: 80%;
+}
+
+.container h1{
+  font-size: 3.5rem;
+  margin-top: 20px;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #333333;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #000000;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  
+  border: 1px solid #333333;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #000000;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2em 0;
+  
 }
