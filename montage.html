@@ -22,6 +22,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
@@ -29,6 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="css/team.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/montage.css">
+    
 
 
     <!-- previews -->
@@ -47,6 +68,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- PAGE TITLE --><meta name="twitter:title" content="Jadavpur University Photographic Club">
     <!-- PAGE DESCRIPTION --><meta name="twitter:description" content="Official Website of Jadavpur University Photographic Club">
     <!-- PAGE PREVIEW --><meta name="twitter:image" content="https://jupconline.in/images/logo2.png">
+
+    <script
+      src="https://kit.fontawesome.com/49282bf691.js"
+      crossorigin="anonymous"
+    ></script>
 
 </head>
 <body>
@@ -69,14 +95,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- <a href="index.html" class="logo">Jadavpur University Photographic Club</a> -->
 
     <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="events.html#events">Events</a>
-        <a href="ob.html">Office Bearers</a>
-        <a href="index.html#FAQ">FAQ</a>
-        <a href="index.html#location">Location</a>
-        <a href="montage.html">Montage</a>
+        <a href="#about-montage">About</a>
+        <a href="#submissions">Submissions</a>
+        <a href="#judges">Judges</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#FAQ">FAQ</a>
+        <a href="index.html">Main Site</a>
         <!-- <a href="join.html">Join BTS '23 2.0</a> -->
     </nav>
 
@@ -86,45 +110,234 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!--Header Ends--> 
 
-<!-- Montage Starts --> 
-
-<section class="about" id="montage">
-
-    <h1 class="heading"><span>Montage</span> 2024 </h1>
-        
-        <div class="row">
-        
-            <div class="image">
-                <img src="images/montagecover.png" alt="" >
-            </div>
-        
-            <div class="content">
-                <h3>MONTAGE 2024</h3>
-                <div class="arial" >
-                    <p style="font-weight: bold" style="font-size: x-large">JUPC has been organizing photo-contests 
-                        for several years now, one of those is organised under the name of Montage. It is a 
-                        comprehensive photography event that is to be conducted at Jadavpur University in 2024.
-                    </p>  
-                </div> 
-                    <br>
-            </div>
-        </div>
+<section class="montage-poster">
+    <h1 style="color: #000000;font-weight: 900;font-size: 4rem;">Montage</h1>
+    <img src="images/MontageUp.png" alt="montage_poster">
 </section>
 
-<section class="blog" id="montage">
-    <div class="box-container">
-        <div class="box" width="50%">
-            <img src="images/montageLogo.png" alt="" width="250px">
-            <a href="https://jupconline.wixsite.com/montage-24-indian" style="text-decoration: none;color:white;"> <h3 class="title">Click Here to Register for Indian Paticipation</h3></a>
+<!--Timer section starts-->
+<section class="countdown-section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="event-date">
+            <h2>Event Date:</h2>
+            <h2>Coming Soon</h2>
+          </div>
         </div>
-
-        <div class="box" width="50%">
-            <img src="images/montageLogo.png" alt="" width="250px">
-            <a href="https://jupconline.wixsite.com/montage-24-inter" style="text-decoration: none;color:white;"> <h3 class="title">Click Here to Register for International Paticipation</h3></a>
+        <div class="col">
+          <div class="counter">
+            <div class="day">
+              <h2 class="day-text">Time</h2>
+              <h3>Days</h3>
+            </div>
+            <div class="hour">
+              <h2 class="hour-text">Time</h2>
+              <h3>Hrs</h3>
+            </div>
+            <div class="minute">
+              <h2 class="minute-text">Time</h2>
+              <h3>Mins</h3>
+            </div>
+            <div class="day">
+              <h2 class="second-text">Time</h2>
+              <h3>Secs</h3>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</section>
-<!-- Montage Ends -->
+    <script src="js/countdown.js"></script>
+  </section>
+  <!--COunter section ends-->
+
+  <!-- -----------------about-section-starts--------------- -->
+  <section class="about-montage" id="about-montage">
+    <div class="about-montage-details">
+      <h1>
+        About Montage
+      </h1>
+      <p>
+        Jadavpur University Photographic Club is a 60-year-old family. On the occasion 
+        of our 60th year anniversary, we decided that we must celebrate it in a way that 
+        allows us to include the largest family possible. And the largest photographic family 
+        we know, is the lovely community of photographers all across the world.
+      </p>
+      <br>
+      <p>
+        We are delighted to bring to you the 12th Edition of JUPC's Photography Contest, 
+        MONTAGE'24. It will be an international photography contest, with various categories, 
+        a heartwarming theme, and a place for everyone to celebrate the art of photography.
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <!-- -----------------about-section-ends--------------- -->
+
+  <!-- submission section -->
+
+  <section id="submissions">
+    <h1 class="submission-title">Submissions</h1>
+    <div id="submission">
+      <div class="box">
+        <img src="/images/montage/MontageUp.png" alt="" />
+        <h2 >Submission for Indians</h2>
+        <p>
+          
+        </p>
+        <a href="">Submit</a>
+      </div>
+      <div class="box">
+        <img src="/images/montage/MontageUp.png" alt="" />
+        <h2>Submission for Internationals</h2>
+        <p>
+          
+        </p>
+        <a href="">Submit</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="judges">
+    <h2 class="judges-title">Our Judges</h2>
+    <div class="judges-container">
+      <div class="card">
+        <div class="imgBx">
+            <img src="/images/montage/profile.png" alt="" />
+        </div>
+        <div class="content">
+          <h2>Coming Soon</h2>
+          <div class="socials">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="images/montage/profile.png" alt="" />
+        </div>
+        <div class="content">
+          <h2>Coming Soon</h2>
+          <div class="socials">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="images/montage/profile.png" alt="" />
+        </div>
+        <div class="content">
+          <h2>Coming Soon</h2>
+          <div class="socials">
+            <i class="fa-brands fa-linkedin fa-xl"></i>
+            <i class="fa-brands fa-twitter fa-xl"></i>
+            <i class="fa-brands fa-instagram fa-xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="timeline">
+    <h1 class="timeline-title">Timeline</h1>
+    <div class="timeline">
+      <div class="tlentry left">
+        <div class="date">Soon</div>
+        <i class="icon fa fa-globe"></i>
+        <div class="tlcontent">
+          <h2>Coming Soon</h2>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+      <div class="tlentry right">
+        <div class="date">Soon</div>
+        <i class="icon fa fa-globe"></i>
+        <div class="tlcontent">
+          <h2>Coming Soon</h2>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+      <div class="tlentry left">
+        <div class="date">Soon</div>
+        <i class="icon fa fa-globe"></i>
+        <div class="tlcontent">
+          <h2>Coming Soon</h2>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+      <div class="tlentry right">
+        <div class="date">Soon</div>
+        <i class="icon fa fa-globe"></i>
+        <div class="tlcontent">
+          <h2>Coming Soon</h2>
+          <p>Coming Soon</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    
+
+     <!-- -----faq-v3---- -->
+  <div class="container" id="FAQ">
+    <h1>Frequently Asked Questions</h1>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button id="accordion-button-1" aria-expanded="false">
+          <span class="accordion-title">Coming Soon</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            Coming Soon
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-2" aria-expanded="false">
+          <span class="accordion-title">Coming Soon</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            Coming Soon
+          </p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <button id="accordion-button-4" aria-expanded="false">
+          <span class="accordion-title">Coming Soon</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            Coming Soon
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title">Coming Soon</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content">
+          <p>
+            Coming Soon
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 
 <!-- footer section starts  -->
 
@@ -135,8 +348,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="box">
             <h3>Quick Links</h3>
-            <a href="index.html"><i class="fas fa-arrow-right"></i>Home</a>
-            <a href="index.html#about"><i class="fas fa-arrow-right"></i>About</a>
+            <a href="index.html"><i class="fas fa-arrow-right"></i>Main Site</a>
+            <a href="index.html#about"><i class="fas fa-arrow-right"></i>About JUPC</a>
             <a href="blog.html"><i class="fas fa-arrow-right"></i>Blog</a>
             <a href="events.html#events"><i class="fas fa-arrow-right"></i>Events</a>
             <a href="ob.html"><i class="fas fa-arrow-right"></i>Office Bearers</a>
@@ -201,6 +414,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+         offset: 20,
+         delay: 0
+       });
+     </script>
+     <script>
+      const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+     </script>
 
 
 
