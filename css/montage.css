@@ -194,6 +194,43 @@
       font-weight: 600;
   }
   
+.submission-guidelines{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.submission-guideline-title{
+    color: #333;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+#general-submission-guidelines h2{
+  color: #333;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#general-submission-guidelines p, ul, ol{
+  font-weight:100;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  
+}
+
+#general-submission-guidelines ul, ol{
+  margin-left: 5%;
+}
+
+#submissions{
+  
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+
     
  
   
