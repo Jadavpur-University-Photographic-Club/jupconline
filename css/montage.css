@@ -527,14 +527,14 @@
 }
 
 .tlentry.left .date {
-  right: -75px;
+  right: -100px;
 }
 
 .tlentry.right .date {
-  left: -75px;
+  left: -100px;
 }
 
-.tlentry .icon {
+.tlentry .fa {
   position: absolute;
   display: inline-block;
   width: 40px;
@@ -550,11 +550,11 @@
   z-index: 1;
 }
 
-.tlentry.left .icon {
+.tlentry.left .fa {
   right: 56px;
 }
 
-.tlentry.right .icon {
+.tlentry.right .fa {
   left: 56px;
 }
 
@@ -613,11 +613,11 @@
   .tlentry.left .date,
   .tlentry.right .date {
     right: auto;
-    left: 15px;
+    left: -5px;
   }
 
-  .tlentry.left .icon,
-  .tlentry.right .icon {
+  .tlentry.left .fa,
+  .tlentry.right .fa {
     right: auto;
     left: 146px;
   }
