@@ -430,6 +430,108 @@
   }
   
 
+  /* workshop section css */
+
+.workshop-title{
+  color: #ffffff;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+
+}
+#workshops{
+
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+
+  
+  #workshop .box h2{
+    font-size: 1.8rem;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #workshop{
+    margin: 34px;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #workshop .box{ 
+    padding: 2rem;
+    padding-bottom: 4rem;
+    margin: 5px;
+    border-radius: 1rem;
+    background: #ffffff;
+    width: 30rem;
+    /* width: 300px; */
+    text-align: center;
+    color: #000000;
+  }
+  #workshop .box img{ 
+    height: 15rem;
+    margin: auto;
+    display: block;
+  }
+  
+  #workshop .box a{
+    position: relative;
+    top: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    color:#ffffff;
+    background-color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#workshop .box p{
+  font-weight:bold;
+  font-size: 1.3rem;
+}
+
+.workshop-guidelines{
+margin-left: 10%;
+margin-right: 10%;
+}
+.workshop-guideline-title{
+  color: #333;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+#general-workshop-guidelines h2{
+color: #ffffff;
+text-align: center;
+font-size: 3rem;
+font-weight: 700;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+#general-workshop-guidelines p, ul, ol{
+font-weight:100;
+font-size: 1.8rem;
+margin-bottom: 20px;
+
+}
+
+#general-workshop-guidelines ul, ol{
+margin-left: 5%;
+}
+
+#workshops{
+  background-color:  #333;
+padding-top: 3rem;
+padding-bottom: 2rem;
+}
+
 
   #timeline {
     background-color: #FDFCFC;
