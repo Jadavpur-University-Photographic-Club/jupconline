@@ -29,7 +29,6 @@
     cursor: pointer;
     transition: 0.3s;
     background-color: ffffff;
-    height: 50vh;
   }
   .card .img-container {
     width: 14em;
