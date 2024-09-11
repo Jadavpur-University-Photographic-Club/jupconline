@@ -4,8 +4,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em 0em;
     text-align: center;
+    align-items: center;
   }
 
 .row .heading{
