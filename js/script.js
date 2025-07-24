@@ -6,6 +6,38 @@ menu.onclick = () =>{
   navbar.classList.toggle('active');
 }
 
+
+
+
+
+// this part is written by krishna and should be removed after the event 
+const header = document.querySelector('.header');
+const currentEvent = document.querySelector('.current-event');
+const headerHeight = header.offsetHeight;
+currentEvent.style.position = 'sticky';
+currentEvent.style.top = headerHeight + 'px';
+currentEvent.style.zIndex = 9999; // optional, to keep above other content
+currentEvent.addEventListener('click', function() {
+  window.location.href = 'https://bornodrik.jupconline.in/';
+});
+
+const floatingClicky = document.querySelector('.floating-clicky');
+floatingClicky.addEventListener('click', function() {
+  window.location.href = 'https://bornodrik.jupconline.in/';
+});
+// till this part 
+
+
+
+
+
+
+
+
+
+
+
+
 // let themeToggler = document.querySelector('.theme-toggler');
 // let toggleBtn = document.querySelector('.toggle-btn');
 
